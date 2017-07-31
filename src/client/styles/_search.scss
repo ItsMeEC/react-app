@@ -1,0 +1,35 @@
+.search {
+  margin-top: 60px;
+  background-color: $color_light-blue;
+  height: 60vh;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+.search__title {
+  color: white;
+  font-weight: lighter;
+  margin-bottom: 40px;
+  
+  font-size: 40px;
+}
+
+.search__input {
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+.search__btn {
+  vertical-align: middle;
+  height: 50px;
+  @include button;
+  background-color: $color_dark-gray;
+}

@@ -1,0 +1,33 @@
+.bar-li__btn {
+  @include button;
+  margin-right: 10px;
+  min-width: 100px;
+}
+
+.bar-li {
+  background-color: $color_almost-white;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.bar-li__img {
+  width: 100%;
+  height: 200px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  @include tablet {
+    width: 300px;
+  }
+}
+
+.bar-li__info {
+  padding: 10px;
+  flex: 1;
+}
+
+.bar-li__data {
+  color: $color_light-green;
+}

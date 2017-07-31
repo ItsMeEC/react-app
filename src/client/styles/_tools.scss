@@ -1,0 +1,73 @@
+$color_dark-gray: #333538;
+$color_light-gray: #43464c;
+$color_light-blue: #58c3e5;
+$color_light-green: #0dadb7;
+$color_almost-white: #f7f7f4;
+
+$viewport-minimum: 320px;
+$viewport-tablet: 768px;
+$viewport-desktop: 1000px;
+$viewport-desktop-lg: 1200px;
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  color: #2a2a29;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+@mixin button {
+  color: white;
+  background-color: $color_light-green;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin minimum {
+  @media only screen and (max-width: $viewport-minimum){
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: $viewport-tablet){
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $viewport-desktop){
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @media only screen and (min-width: $viewport-desktop-lg){
+    @content;
+  }
+}
